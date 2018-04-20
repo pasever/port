@@ -1,6 +1,90 @@
-body {
-    background-color: grey;
-}
-h1 {
-    font-size: 64px;
-}
+@import "../vendors/normalize.css";
+
+// ===============  variables  =========== 
+
+
+// =============== html body =============
+html {
+    font-size: 14px;
+    font-weight: 400;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+
+  // ================= Links ===============
+  a {
+    color: #1887D1;
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    line-height: 1.25;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: ' ';
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+
+  .navbar {
+    top: 0;
+    background-color: rgb(20, 17, 50);
+    .navbar-container {
+        &-ul {
+            list-style-type: none;
+            &-li {
+                list-style-type: none;             
+            }
+            a {
+               // color:rgb(33.2%, 92.5%, 33.2%);
+                
+                    h1 {
+                        color: rgba(143, 76, 76, 0.8);
+                        text-shadow: 1px 1px 2px #360000;
+                    }
+        
+            }
+        }
+     }
+  }
+
+
+  
+  .navbar-container-ul {
+     list-style-type: none;
+  }
