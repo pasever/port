@@ -400,6 +400,7 @@ h4 {
 
 .navbar {
   top: 0;
+  margin-top: -1.5rem;
   background-color: #141132;
 }
 
@@ -412,8 +413,48 @@ h4 {
 }
 
 .navbar .navbar-container-ul a h1 {
-  color: rgba(143, 76, 76, 0.8);
+  color: #0dbc79;
   text-shadow: 1px 1px 2px #360000;
+}
+
+#aboutme {
+  height: 100%;
+}
+
+#skills {
+  height: 100%;
+  background: grey;
+}
+
+#portfolio {
+  height: 100%;
+  background-color: #fff;
+}
+
+#portfolio .container {
+  padding-top: 11rem;
+}
+
+.container-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2em;
+  grid-auto-rows: minmax(10rem, auto);
+}
+
+.card {
+  border: 1.1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.center-card {
+  border: none;
+  margin: auto;
+}
+
+.center-card h4 {
+  color: #fc542b;
+  font-size: 3rem;
 }
 
 .navbar-container-ul {
