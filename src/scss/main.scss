@@ -65,15 +65,19 @@ html {
     top: 0;
     margin-top: -1.5rem;
     background-color: rgb(20, 17, 50);
-    .navbar-container {
+    &-container {
         &-ul {
             list-style-type: none;
-            &-li {
-                list-style-type: none;             
+            & li {
+                list-style-type: none;   
+                display: grid;  
+                grid-template-columns: repeat(4, 200px);
+                grid-auto-rows: auto;
+                //align-items: right;        
             }
             a {
                // color:rgb(33.2%, 92.5%, 33.2%);
-                
+               text-decoration: none;             
                     h1 {
                         //color: rgba(143, 76, 76, 0.8);
                         color: rgb(13, 188, 121);
@@ -113,6 +117,7 @@ html {
 
 .card {
   border: 1.1px solid rgba(0,0,0,0.125);
+  //border: 1.1px solid rgba(0,0,0,0.125);
   border-radius: 0.25rem;
 }
 
@@ -122,6 +127,7 @@ html {
   h4 {
     color: rgb(252, 84 , 43);
     font-size: 3rem;
+    //align-self: auto;
   }
 }
   
