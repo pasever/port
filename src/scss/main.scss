@@ -1,4 +1,5 @@
 @import "../vendors/normalize.css";
+//@import "../../node-modules/hover.css/css/hover.css";
 
 // ===============  variables  =========== 
 
@@ -67,13 +68,14 @@ html {
     background-color: rgb(20, 17, 50);
     &-container {
         &-ul {
-            list-style-type: none;
+            display: grid;  
+            grid-template-columns: repeat(4, 8rem);
+            grid-auto-rows: auto;
+            align-self: right;
+
             & li {
-                list-style-type: none;   
-                display: grid;  
-                grid-template-columns: repeat(4, 200px);
-                grid-auto-rows: auto;
-                //align-items: right;        
+                list-style-type: none;
+                margin: 1.5rem auto;     
             }
             a {
                // color:rgb(33.2%, 92.5%, 33.2%);
@@ -82,42 +84,55 @@ html {
                         //color: rgba(143, 76, 76, 0.8);
                         color: rgb(13, 188, 121);
                         text-shadow: 1px 1px 2px #360000;
-                        
+                        font-size: 1.75rem;    
+                        //margin-bottom: 0;                  
                     }
         
+            }
+            a :hover {
+              color:red;
             }
         }
      }
   }
-
+#home {
+  height: 100%;
+  .container-row {
+    text-align: center;
+    font-size: 1.2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    //align-self: auto;
+    //position: fixed;
+    // height: 100%;
+    // width: 100%;
+  }
+}
 #aboutme {
   height: 100%;
+  background-color: #14111F;
 }
 
-#skills {
-  height: 100%;
-  background: grey;
-}
+
 
 #portfolio {
   height: 100%;
-  background-color: #fff;
-  //margin-top: 15rem;
+  background-color: white;
   .container {
     padding-top: 11rem;
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 2em;
+      grid-auto-rows: minmax(10rem, auto);
+    }
   }
-}
-.container-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2em;
-  grid-auto-rows: minmax(10rem, auto);
-  //margin-top: 15rem;
 }
 
 .card {
+  //border: 1.1px solid rgb(252, 84, 43);
   border: 1.1px solid rgba(0,0,0,0.125);
-  //border: 1.1px solid rgba(0,0,0,0.125);
   border-radius: 0.25rem;
 }
 
@@ -127,10 +142,37 @@ html {
   h4 {
     color: rgb(252, 84 , 43);
     font-size: 3rem;
-    //align-self: auto;
   }
 }
-  
-  .navbar-container-ul {
-     list-style-type: none;
+
+  .hvr-underline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.003s;
+    transition-duration: 0.03s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
