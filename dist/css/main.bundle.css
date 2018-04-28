@@ -440,6 +440,7 @@ h4 {
   display: grid;
   align-items: center;
   justify-content: center;
+  align-content: stretch;
 }
 
 #aboutme {

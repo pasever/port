@@ -103,6 +103,9 @@ html {
     display: grid;
     align-items: center;
     justify-content: center;
+    align-content: stretch;
+    //grid-template-columns: 1fr;
+    //grid-template-rows: 1fr;
     //align-self: auto;
     //position: fixed;
     // height: 100%;
