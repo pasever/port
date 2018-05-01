@@ -121,6 +121,25 @@ html {
 #aboutme {
   height: 100%;
   background-color: #14111F;
+  .container {
+    &-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 50rem;
+      grid-gap: 5rem;
+      margin-top: 10rem;
+      padding-top:9rem;
+      &-content {
+        h4 {
+          color: rgb(215, 200, 177);
+          font-family: 'Cinzel', serif;
+          line-height: 1.4;
+          font-size: 1.2rem;
+          
+        }
+      }
+    }
+  }
 }
 
 
