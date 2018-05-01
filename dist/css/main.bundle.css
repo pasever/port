@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);@import url(https://fonts.googleapis.com/css?family=Russo+One);@import url(https://fonts.googleapis.com/css?family=Russo+One|Tinos);/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -421,6 +421,7 @@ h4 {
 }
 
 .navbar-container-ul a h1 {
+  font-family: 'Tinos', serif;
   color: #0dbc79;
   text-shadow: 1px 1px 2px #360000;
   font-size: 1.75rem;
@@ -440,7 +441,13 @@ h4 {
   display: grid;
   align-items: center;
   justify-content: center;
-  align-content: stretch;
+  margin-top: 15rem;
+}
+
+#home .container-row h1 {
+  font-family: 'Tinos', serif;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 #aboutme {
@@ -454,27 +461,27 @@ h4 {
 }
 
 #portfolio .container {
-  padding-top: 11rem;
+  padding-top: 9rem;
 }
 
 #portfolio .container-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2em;
-  grid-auto-rows: minmax(10rem, auto);
+  grid-auto-rows: minmax(12rem, auto);
 }
 
-.card {
+#portfolio .card {
   border: 1.1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 
-.center-card {
+#portfolio .center-card {
   border: none;
   margin: auto;
 }
 
-.center-card h4 {
+#portfolio .center-card h4 {
   color: #fc542b;
   font-size: 3rem;
 }

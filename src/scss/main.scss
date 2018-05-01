@@ -1,5 +1,8 @@
 @import "../vendors/normalize.css";
 //@import "../../node-modules/hover.css/css/hover.css";
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Russo+One|Tinos');
 
 // ===============  variables  =========== 
 
@@ -82,6 +85,7 @@ html {
                text-decoration: none;             
                     h1 {
                         //color: rgba(143, 76, 76, 0.8);
+                        font-family: 'Tinos', serif;
                         color: rgb(13, 188, 121);
                         text-shadow: 1px 1px 2px #360000;
                         font-size: 1.75rem;    
@@ -95,7 +99,8 @@ html {
         }
      }
   }
-#home {
+
+  #home {
   height: 100%;
   .container-row {
     text-align: center;
@@ -103,13 +108,14 @@ html {
     display: grid;
     align-items: center;
     justify-content: center;
-    align-content: stretch;
-    //grid-template-columns: 1fr;
-    //grid-template-rows: 1fr;
-    //align-self: auto;
-    //position: fixed;
-    // height: 100%;
-    // width: 100%;
+    margin-top: 15rem;
+    h1 {
+      //font-family: 'Cinzel', serif;
+      // font-family: 'Russo One', sans-serif;
+      font-family: 'Tinos', serif;
+      font-size: 3rem;
+      line-height: 1.5;
+    }
   }
 }
 #aboutme {
@@ -123,28 +129,26 @@ html {
   height: 100%;
   background-color: white;
   .container {
-    padding-top: 11rem;
+    padding-top: 9rem;
     &-row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       grid-gap: 2em;
-      grid-auto-rows: minmax(10rem, auto);
+      grid-auto-rows: minmax(12rem, auto);
     }
   }
-}
-
-.card {
-  //border: 1.1px solid rgb(252, 84, 43);
-  border: 1.1px solid rgba(0,0,0,0.125);
-  border-radius: 0.25rem;
-}
-
-.center-card {
-  border: none;
-  margin: auto; 
-  h4 {
-    color: rgb(252, 84 , 43);
-    font-size: 3rem;
+  .card {
+    border: 1.1px solid rgba(0,0,0,0.125);
+    border-radius: 0.25rem;
+  }
+  
+  .center-card {
+    border: none;
+    margin: auto; 
+    h4 {
+      color: rgb(252, 84 , 43);
+      font-size: 3rem;
+    }
   }
 }
 
