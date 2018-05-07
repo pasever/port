@@ -437,7 +437,7 @@ h4 {
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-top: 15rem;
+  margin: 15rem auto;
 }
 
 #home .container-row h1 {
@@ -484,6 +484,21 @@ h4 {
 #portfolio .card {
   border: 1.1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+}
+
+#portfolio .card-name {
+  text-align: center;
+  color: green;
+}
+
+#portfolio .card-1 {
+  background-image: url(../images/webmachine.png);
+  background-size: cover;
+}
+
+#portfolio .card-4 {
+  background-image: url(../images/devil.png);
+  background-size: cover;
 }
 
 #portfolio .center-card {

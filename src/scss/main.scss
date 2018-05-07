@@ -88,8 +88,7 @@ html {
                         font-family: 'Tinos', serif;
                         color: rgb(13, 188, 121);
                         text-shadow: 1px 1px 2px #360000;
-                        font-size: 1.75rem;    
-                        //margin-bottom: 0;                  
+                        font-size: 1.75rem;                   
                     }
         
             }
@@ -100,15 +99,17 @@ html {
      }
   }
 
+//  --------------------------------------------
+//  --------------- Home Section ---------------
+//  --------------------------------------------
   #home {
-  // height: 100%;
   .container-row {
     text-align: center;
     font-size: 1.2rem;
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-top: 15rem;
+    margin: 15rem auto;
     h1 {
       //font-family: 'Cinzel', serif;
       // font-family: 'Russo One', sans-serif;
@@ -119,7 +120,6 @@ html {
   }
 }
 #aboutme {
-  // height: 100%;
   background-color: #14111F;
   .container {
     &-row {
@@ -134,18 +134,17 @@ html {
           color: rgb(215, 200, 177);
           font-family: 'Cinzel', serif;
           line-height: 1.4;
-          font-size: 1.2rem;
-          
+          font-size: 1.2rem;        
         }
       }
     }
   }
 }
 
-
-
+//  --------------------------------------------
+//  ------------ Portfolio Section -------------
+//  --------------------------------------------
 #portfolio {
-  // height: 100%;
   background-color: white;
   .container {
     padding-top: 9rem;
@@ -159,7 +158,20 @@ html {
   .card {
     border: 1.1px solid rgba(0,0,0,0.125);
     border-radius: 0.25rem;
+    &-name {
+      text-align: center;
+      color: green;
+    }
+    &-1 {
+      background-image: url('../images/webmachine.png');
+      background-size: cover;
+    }
+    &-4 {
+      background-image: url('../images/devil.png');
+      background-size: cover;
+    }
   }
+ 
   
   .center-card {
     border: none;
