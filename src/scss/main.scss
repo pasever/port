@@ -22,7 +22,6 @@ html {
     line-height: 1.5;
   }
 
-
   // ================= Links ===============
   a {
     color: #1887D1;
@@ -116,6 +115,10 @@ html {
     }
   }
 }
+
+//  --------------------------------------------
+//  --------------- About Me Section -----------
+//  --------------------------------------------
 #aboutme {
   background-color: #14111F;
   .container {
@@ -159,8 +162,9 @@ html {
     }
   }
   .card {
-    border: 1.1px solid rgba(0,0,0,0.125);
+    border: 1.1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);
     &-name {
       text-align: center;
       color: green; 
@@ -199,10 +203,10 @@ html {
     }
   }
  
-  
   .center-card {
     border: none;
-    margin: auto; 
+    margin: auto;
+    box-shadow: none; 
     h4 {
       color: rgb(252, 84 , 43);
       font-size: 3rem;

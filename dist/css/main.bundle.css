@@ -489,6 +489,7 @@ h4 {
 #portfolio .card {
   border: 1.1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 #portfolio .card-name {
@@ -539,6 +540,7 @@ h4 {
 #portfolio .center-card {
   border: none;
   margin: auto;
+  box-shadow: none;
 }
 
 #portfolio .center-card h4 {
